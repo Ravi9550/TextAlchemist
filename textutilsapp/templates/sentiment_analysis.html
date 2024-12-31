@@ -1,0 +1,40 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+{% endblock %} 
+
+{% block content %}
+    <div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 text-primary">Sentiment Analysis</h1>
+        <p class="lead text-muted">
+        Analyze the sentiment of your text and get insights instantly!
+        </p>
+    </div>
+
+    <!-- Sentiment Analysis Form -->
+    <form method="POST" class="mt-4">
+        {% csrf_token %}
+        {% include 'others/form_template.html' %}
+        {% include 'others/submit_button.html' with button_label="Analyze"  %}
+        
+    </form>
+
+  
+    {% if sentiment %}
+    <div id="result-section" class="card shadow-lg p-4 mt-4">
+        <h3 class="text-center mb-4">Analysis Results</h3>
+
+        <div class="alert alert-info">
+        <h5><strong>Sentiment:</strong> {{ sentiment }}</h5>
+        <p><strong>Sentiment Score:</strong> {{ sentiment_value }}</p>
+        </div>
+    </div>
+    {% endif %}
+    </div>
+
+
+
+{% endblock %}

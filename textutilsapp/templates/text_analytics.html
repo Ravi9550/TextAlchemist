@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %} 
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+{% endblock %} 
+
+{% block content %}
+<div class="container mt-5">
+   <div class="text-center mb-4">
+        <h1 class="display-4 text-primary">Text Analytics</h1>
+        <p class="lead text-muted">
+       Discover key insights from your text with analytics like word count, character count, and more.
+        </p>
+    </div>
+   
+    <form method="POST" class="mt-4">
+        {% csrf_token %}
+        {% include 'others/form_template.html'  %}
+         {% include 'others/submit_button.html' with button_label="Analyze" %}
+
+    </form>
+
+   
+    {% if analytics %}
+        <div id="result-section" class="card shadow-lg p-4 mt-4">
+        <h3 class="text-center mb-4">Analysis Results</h3>
+
+        <div class="alert alert-info">
+        <p><strong>Word Count:</strong> {{ analytics.word_count }}</p>
+        <p><strong>Character Count:</strong> {{ analytics.char_count }}</p>
+        <p><strong>Sentence Count:</strong> {{ analytics.sentence_count }}</p>
+        <p><strong>Average Sentence Length:</strong> {{ analytics.avg_sentence_length|floatformat:2 }}</p>
+        <h4>Most Common Words:</h4>
+        <ul>
+            {% for word, count in analytics.most_common_words %}
+            <li>{{ word }}: {{ count }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+    {% endif %}
+</div>
+{% endblock %}

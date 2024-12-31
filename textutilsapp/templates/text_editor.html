@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% load static %} 
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/text_editor.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+{% endblock %} 
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Pro Text Editor</h1>
+    <div id="toolbar-container" title="Use this toolbar for text formatting">
+        <select class="ql-font" title="Select Font"></select>
+        <select class="ql-size" title="Select Text Size"></select>
+        <button class="ql-bold" title="Bold">B</button>
+        <button class="ql-italic" title="Italic">I</button>
+        <button class="ql-underline" title="Underline">U</button>
+        <button class="ql-strike" title="Strike Through">S</button>
+        <button class="ql-script" value="sub" title="Subscript">X₂</button>
+        <button class="ql-script" value="super" title="Superscript">Xⁿ</button>
+        <button class="ql-list" value="ordered" title="Numbered List">1.</button>
+        <button class="ql-list" value="bullet" title="Bullet List">•</button>
+        <button class="ql-indent" value="-1" title="Decrease Indent">←</button>
+        <button class="ql-indent" value="+1" title="Increase Indent">→</button>
+        <select class="ql-align" title="Text Alignment"></select>
+        
+        <label for="text-color-picker" style="margin-right: 10px;"></label>
+        <input type="color" id="text-color-picker" title="Select Text Color" />
+        <label for="bg-color-picker" style="margin-right: 10px;"></label>
+        <input type="color" id="bg-color-picker" title="Select Background Color" />
+        
+        <button class="ql-link" title="Insert Link">🔗</button>
+        <button class="ql-image" title="Insert Image">🖼</button>
+        <button class="ql-video" title="Insert Video">🎥</button>
+        <button class="ql-blockquote" title="Blockquote">❝</button>
+        <button class="ql-code-block" title="Code Block">{}</button>
+        <button id="fullscreen" class="ql-fullscreen" title="Toggle Fullscreen">⛶</button>
+    </div>
+
+    <div id="editor-container" style="height: 400px; border: 1px solid #ccc;"></div>
+
+    <h3 class="mt-4">Live Preview</h3>
+    <div id="live-preview" style="border: 1px solid #ccc; padding: 10px; min-height: 200px;"></div>
+
+    <div class="mt-4">
+        <button id="export-pdf" class="btn btn-info" title="Export as PDF">Export as PDF</button>
+        <button id="export-word" class="btn btn-secondary" title="Export as Word">Export as Word</button>
+        <button id="export-txt" class="btn btn-success" title="Export as Text">Export as Text</button>
+    </div>
+</div>
+
+
+ {% block javascript %}
+            <script src="{% static 'js/text_editor.js' %}"></script>
+ {% endblock %}
+
+{% endblock %}

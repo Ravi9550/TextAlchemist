@@ -1,0 +1,23 @@
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'common.css' %}">
+{% endblock %}
+
+<div class="row mt-4">
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary btn-block">{{ button_label }}</button>
+        </div>
+        
+        <div class="col-6">
+            <button type="submit" class="btn btn-secondary btn-block custom-clear-btn" id="clear-btn">Clear</button>
+        </div>
+</div>
+
+  {% block javascript %}
+            <script src="{% static 'js/clear_button.js' %}"></script>
+
+    {% endblock %}
+
+
+

@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block title %}TextUtils{% endblock %}
+
+{% block content %}
+
+    <!-- Features Section with Carousel -->
+    <div id="featuresCarousel" class="carousel slide features-section" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <!-- First Page -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Sentiment Analysis</h3>
+                                <p>Analyze the sentiment of your text and understand its tone.</p>
+                                <a href="/sentiment_analysis" class="btn btn-outline-primary">Try Now</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Text Summarization</h3>
+                                <p>Summarize lengthy text into concise, easy-to-read content.</p>
+                                <a href="/summarize" class="btn btn-outline-primary">Try Now</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Text Editor</h3>
+                                <p>Real-time editing with customizable fonts and rich text formatting.</p>
+                                <a href="/editor" class="btn btn-outline-primary">Try Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Page -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Plagrism Checker</h3>
+                                <p>Compare input text against online sources to ensure originality and authenticity.</p>
+                                <a href="#" class="btn btn-outline-primary">Coming Soon</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Text Insights</h3>
+                                <p>Discover key insights from your text with analytics like word count, character count, and more.</p>
+                                <a href="/text-analytics" class="btn btn-outline-primary">Try Now</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Language Translator</h3>
+                                <p>Translate your text effortlessly and connect with the world in any language.</p>
+                                <a href="/language_translation" class="btn btn-outline-primary">Try Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Page -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Text to Artwork</h3>
+                                <p>Transform input text into AI-generated artwork or images inspired by its content.</p>
+                                <a href="#" class="btn btn-outline-primary">Coming Soon</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Grammar and Style Checker</h3>
+                                <p>Enhance writing with grammar, punctuation, and style suggestions using advanced tools.</p>
+                                <a href="#" class="btn btn-outline-primary">Coming Soon</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card feature-card p-3">
+                                <h3 class="mt-3">Text-to-Speech </h3>
+                                <p>Convert text to speech with customizable voices, accents, and tones.</p>
+                                <a href="#" class="btn btn-outline-primary">Coming Soon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+{% endblock %}
+
+    
+
