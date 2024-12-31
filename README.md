@@ -51,3 +51,10 @@ Follow these steps to set up the project locally.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Ravi9550/TextAlchemist.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd TextAlchemist
+3. Set up a virtual environment:
+   ```bash
+   python -m venv venv
