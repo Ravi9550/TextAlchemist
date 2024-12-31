@@ -64,9 +64,35 @@ Follow these steps to set up the project locally.
    On Windows:
    ```bash
     venv\Scripts\activate
+   ```
    
-  On MacOS/Linux:
+   On MacOS/Linux:
    ```bash
    source venv/bin/activate
+   ```
 
 5. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+6. Run the Django development server:
+    ```bash
+    python manage.py runserver
+    ```
+
+## Usage
+- Sentiment Analysis: Paste any text and the tool will analyze the sentiment and display whether it is positive, negative, or neutral.
+- Text Summarization: Paste a lengthy piece of text, and the tool will generate a concise summary of the content.
+- Text Editor: Edit your text with rich formatting options (bold, italics, custom fonts, etc.).
+- Language Translator: Translate your text between different languages using the integrated translation API.
+
+## Contributing
+I welcome contributions to improve the TextAlchemist project! If you'd like to contribute, please fork the repository and create a pull request with your changes.
+
+## Steps to Contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Test your changes.
+5. Submit a pull request.
+   
