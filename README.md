@@ -22,8 +22,12 @@ TextAlchemist is a Django-based web application offering a variety of text utili
 Here are some screenshots of the TextAlchemist project:
 
 ### Sentiment Analysis
-![Sentiment Analysis Demo](assets![Screenshot 2024-12-31 175109](https://github.com/user-attachments/assets/57399900-60e6-461c-8b6d-b9fdfa67c2e1)
-/images/sentiment_analysis_demo.png)
+
+
+![Senti1](https://github.com/user-attachments/assets/2cd42f79-ff59-44b6-a186-dd7cd63206a0)
+
+![Senti2](https://github.com/user-attachments/assets/9e0c72fa-1b0c-4b29-933b-3ead93f8b1b6)
+
 
 ### Text Summarization
 ![Text Summarization Demo](assets/images/text_summarization_demo.png)
