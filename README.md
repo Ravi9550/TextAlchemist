@@ -89,10 +89,10 @@ Follow these steps to set up the project locally.
 ## Contributing
 I welcome contributions to improve the TextAlchemist project! If you'd like to contribute, please fork the repository and create a pull request with your changes.
 
-## Steps to Contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes.
-4. Test your changes.
-5. Submit a pull request.
+  # Steps to Contribute:
+  1. Fork the repository.
+  2. Create a new branch for your feature or bug fix.
+  3. Make your changes.
+  4. Test your changes.
+  5. Submit a pull request.
    
