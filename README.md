@@ -58,3 +58,15 @@ Follow these steps to set up the project locally.
 3. Set up a virtual environment:
    ```bash
    python -m venv venv
+
+4. Activate the virtual environment:
+
+   On Windows:
+   ```bash
+    venv\Scripts\activate
+   
+  On MacOS/Linux:
+   ```bash
+   source venv/bin/activate
+
+5. Install the required dependencies:
