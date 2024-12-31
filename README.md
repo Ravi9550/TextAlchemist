@@ -25,9 +25,8 @@ Here are some screenshots of the TextAlchemist project:
 
 
 ![Senti1](https://github.com/user-attachments/assets/2cd42f79-ff59-44b6-a186-dd7cd63206a0)
-
 ![Senti2](https://github.com/user-attachments/assets/9e0c72fa-1b0c-4b29-933b-3ead93f8b1b6)
-
+  
 
 ### Text Summarization
 ![Text Summarization Demo](assets/images/text_summarization_demo.png)
